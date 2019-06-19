@@ -1,9 +1,11 @@
 module.exports = {
   siteMetadata: {
     title: `Cтраница Артёма Рыжкова`,
-    description: `Страница начинающего фронтенд разработчика`,
-    url: ``,
+    description: `Страница начинающего фронтенд разработчика Рыжкова Артёма`,
+    url: `http://somesite.github.io`,
+    image: `/images/myself.jpg`,
     twitterUsername: `@temmyriz`,
+    siteLanguage: `ru`,
   },
   plugins: [
     `gatsby-plugin-sass`,

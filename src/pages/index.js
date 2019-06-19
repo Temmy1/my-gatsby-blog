@@ -4,11 +4,13 @@ import Layout from "../components/layout"
 import Container from "../components/container"
 import Heading from "../components/heading"
 import Contact from "../components/contact"
+import SEO from "../components/SEO"
 
 export default ({ data }) => {
 
   return (
     <Layout>
+      <SEO title="Главная" />
      <Container>
      <section>
         <Heading text="Привет, вы попали на мой сайт" />

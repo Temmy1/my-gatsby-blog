@@ -5,6 +5,7 @@ import Container from "../components/container"
 import Heading from "../components/heading"
 import aboutStyle from "../styles/about.module.scss"
 import Contact from "../components/contact"
+import SEO from "../components/SEO"
 
 export default () => {
  const data = useStaticQuery(graphql`
@@ -22,6 +23,7 @@ export default () => {
 
  return (
     <Layout>
+    <SEO title="Обо мне" />
      <Container>
      <section className={aboutStyle.aboutMe}>
         <Heading text="Обо мне" />

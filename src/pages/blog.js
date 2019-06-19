@@ -3,11 +3,13 @@ import Layout from "../components/layout"
 import Container from "../components/container"
 import Heading from "../components/heading"
 import { Link, graphql } from "gatsby"
+import SEO from "../components/SEO"
 
 export default ({ data }) => {
   
   return (
     <Layout>
+      <SEO title="Блог" />
      <Container>
      <section>
         <Heading text="Мой блог" />
