@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import Container from "../components/container"
 import Heading from "../components/heading"
 import projectStyle from "../styles/projects.module.scss"
-import SEO from "../components/SEO"
+import SEO from "../components/seo"
 
 export default ({ data }) => {
   

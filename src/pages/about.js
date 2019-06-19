@@ -5,7 +5,7 @@ import Container from "../components/container"
 import Heading from "../components/heading"
 import aboutStyle from "../styles/about.module.scss"
 import Contact from "../components/contact"
-import SEO from "../components/SEO"
+import SEO from "../components/seo"
 
 export default () => {
  const data = useStaticQuery(graphql`
