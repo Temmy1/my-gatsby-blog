@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Верстка макета Sigxak",
+    "date": "2019-05",
+    "url": "https://github.com/Temmy1/demolayout",
+    "description": "Лендинг предполагаемой страницы дизайнера."
+  },
+  {
+    "title": "Верстка макета Bicycle",
+    "date": "2019-06",
+    "url": "https://github.com/Temmy1/bicycle-demolayout",
+    "description": "Лендинг предполагаемого магазина велосипедов. Оттачивал на нём CSS Grid."
+  }
+]

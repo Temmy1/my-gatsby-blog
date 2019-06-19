@@ -1,21 +1,49 @@
 import React from "react"
-import { Link } from "gatsby"
-
+import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import Container from "../components/container"
+import Heading from "../components/heading"
+import Contact from "../components/contact"
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
-)
+export default ({ data }) => {
 
-export default IndexPage
+  return (
+    <Layout>
+     <Container>
+     <section>
+        <Heading text="Привет, вы попали на мой сайт" />
+
+        <p>Я Артём и я занимаюсь версткой сайтов. Но это не всё. Если вам интересно, то вы можете 
+        найти больше информации обо мне, перейдя по <Link to="/about/">этой</Link> ссылке. Здесь детально сказано
+        о моих навыках, опыте и вообще о том, кто я такой.</p>
+        
+     
+    
+        <h2>Последнее из блога.</h2>
+      
+         
+        <Link to={data.allMarkdownRemark.edges[0].node.fields.slug}><p>{data.allMarkdownRemark.edges[0].node.frontmatter.title}{" "}</p></Link>
+     
+      </section>
+      <Contact />
+     </Container>
+      
+    </Layout>
+  )
+}
+export const query = graphql`
+  query {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+      edges {
+        node {
+          frontmatter {
+            title
+          }
+          fields {
+            slug
+          }
+        }
+      }
+    }
+  }
+`
