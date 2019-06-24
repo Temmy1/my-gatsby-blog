@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Cтраница Артёма Рыжкова`,
     description: `Страница начинающего фронтенд разработчика Рыжкова Артёма`,
-    url: `http://somesite.github.io`,
+    url: `https://happy-brown-6b65db.netlify.com`,
     image: `/images/myself.jpg`,
     twitterUsername: `@temmyriz`,
     siteLanguage: `ru`,
