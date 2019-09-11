@@ -2,8 +2,26 @@ a {
   color: #225378;
   text-decoration: none;
   cursor: pointer;
-
+  opacity: .8;
+  transition: .3s ease-in-out;
+  -webkit-transition: .3s ease-in-out;
+  -moz-transition: .3s ease-in-out;
+  -ms-transition: .3s ease-in-out;
+  -o-transition: .3s ease-in-out;
+  h3, p {
+    color: #225378;
+    opacity: .8;
+    transition: .3s ease-in-out;
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -ms-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+  }
+  
   &:hover {
-    text-decoration: underline;
+    h3, p {
+      opacity: 1;
+    }
+    opacity: 1;
   }
 }
