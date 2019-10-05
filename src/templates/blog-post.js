@@ -12,6 +12,9 @@ export default ({ data }) => {
       <Container>
         <section>
           <h1>{post.frontmatter.title}</h1>
+          <p style={{ color: `#a29f9f`, fontSize: `.9em`}}>
+                {post.frontmatter.date}
+              </p>
           <div dangerouslySetInnerHTML={{ __html: post.html}} />
         </section>
       </Container>
@@ -24,6 +27,7 @@ export const query = graphql`
       html
       frontmatter {
         title
+        date(formatString: "DD.MM.YYYY")
       }
     }
   }
